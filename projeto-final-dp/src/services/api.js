@@ -1,11 +1,21 @@
 const BASE = "https://fakestoreapi.com";
 
-async function getProducts() {
+export async function getProducts() {
   const res = await fetch(`${BASE}/products`);
   return res.json();
 }
 
-async function getProduct(id) {
+export async function getProduct(id) {
   const res = await fetch(`${BASE}/products/${id}`);
+  return res.json();
+}
+
+export async function getCategories(cat) {
+  const res = await fetch(`${BASE}/categories/${cat}`);
+  return res.json();
+}
+
+export async function getProductsByCategory(cat) {
+  const res = await fetch(`${BASE}/category/${cat}`);
   return res.json();
 }
