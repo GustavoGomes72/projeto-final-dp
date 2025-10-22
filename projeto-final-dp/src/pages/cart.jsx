@@ -11,13 +11,24 @@ export default function Cart() {
 
   const total = cartItems.reduce((sum, item) => sum + item.price, 0);
 
+  function removeItem(idRemoved) {
+    const newCartItems = cartItems.filter(item => item.id !== idRemoved);
+    setCartItems(newCartItems);
+    const newCartIDs = newCartItems.map(item => item.id);
+    localStorage.setItem("cart", JSON.stringify(newCartIDs));
+  }
+
+
+
+
   return (
     <div className="cart">
-      <h1>Carrinho</h1>
+      <h1>Cart</h1>
       {cartItems.map((item) => (
         <div key={item.id}>
           <p>{item.title}</p>
           <p>${item.price}</p>
+          <button onClick={() => removeItem(item.id)}>Remove</button>
         </div>
       ))}
       <h3>Total: ${total.toFixed(2)}</h3>

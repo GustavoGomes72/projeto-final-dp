@@ -19,6 +19,8 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Cart from "./pages/cart";
+import Header from "./components/header";
+
 
 export default function App() {
   const addToCart = (id) => {
@@ -33,6 +35,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home onAddToCart={addToCart} />} />
         <Route path="/cart" element={<Cart />}/>
