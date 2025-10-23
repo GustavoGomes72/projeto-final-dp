@@ -1,10 +1,11 @@
 import React from 'react'
+import './productCard.css'
 
 export default function ProductCard({product, onAdd}) {
   return (
     <div className='product-card'>
-      <div className='product-image'>
-        <img src= {product.image} alt={product.title}/>
+      <div>
+        <img className='product-image' src= {product.image} alt={product.title}/>
       </div>
       <div className='product-title'>
         <h3>{product.title}</h3>

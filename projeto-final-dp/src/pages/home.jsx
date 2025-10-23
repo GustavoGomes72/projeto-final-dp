@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getProducts, getCategories, getProductsByCategory } from "../services/api";
 import ProductCard from "../components/productCard";
 import CategoryFilter from "../components/categoryFilter";
+import '../styles/home.css'
 
 export default function Home({onAddToCart}) {
     const [products, setProducts] = useState([]);
