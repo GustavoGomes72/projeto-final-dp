@@ -1,0 +1,32 @@
+.imagessection {
+    display: flex; 
+    flex-wrap: wrap;
+    max-width: 100%; 
+}
+
+.imagessection > div {
+    flex: 1 1 33%; 
+    min-width: 0;
+    padding: 2px;
+}
+
+.image {
+    max-width: 100%; 
+    height: auto;   
+}
+
+@media (max-width: 480px) {
+    .imagessection > div {
+        flex: 1 1 100%; 
+        min-width: 0;
+        padding: 2px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .imagessection > div {
+        flex: 1 1 50%; 
+        min-width: 0;
+        padding: 2px;
+    }
+}

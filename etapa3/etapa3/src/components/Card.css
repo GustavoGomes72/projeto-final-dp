@@ -1,0 +1,36 @@
+.card-container {
+    margin-top: 20px;
+    width: 300px;
+    height: 580px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(49, 49, 49);
+}
+
+.name {
+    color: whitesmoke;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.genre {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.price {
+    color: rgb(65, 116, 255);
+    font-size: 20px;
+    font: bold;
+}
+
+.img {
+    width: 80%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 2px;
+
+}

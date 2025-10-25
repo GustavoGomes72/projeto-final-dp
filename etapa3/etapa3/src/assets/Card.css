@@ -1,0 +1,30 @@
+.card-container {
+    border-radius: 4px;
+    background-color: gray;
+}
+
+.name {
+    color: whitesmoke;
+    font-size: 14px;
+    font: bold;
+}
+
+.genre {
+    color: whitesmoke;
+    font-size: 14px;
+    font: bold;
+}
+
+.price {
+    color: rgb(65, 116, 255);
+    font-size: 14px;
+    font: bold;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+
+}
