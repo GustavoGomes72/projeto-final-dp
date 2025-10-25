@@ -20,6 +20,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Cart from "./pages/cart";
 import Header from "./components/header";
+import About from "./pages/about";
 
 
 export default function App() {
@@ -34,12 +35,17 @@ export default function App() {
 
 
   return (
+    <>
     <BrowserRouter>
-      <Header/>
+    <Header/>
+      <div>
       <Routes>
         <Route path="/" element={<Home onAddToCart={addToCart} />} />
         <Route path="/cart" element={<Cart />}/>
+        <Route path="/about" element={<About />} />
       </Routes>
+      </div>
     </BrowserRouter>
+    </>
   )
 }

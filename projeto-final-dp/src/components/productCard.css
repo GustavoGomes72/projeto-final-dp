@@ -1,4 +1,90 @@
+.product-card {
+    width: 200px;
+    padding: 20px 20px;
+
+
+    /*Animação fade in*/
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@media (max-width: 450px) {
+    .product-card {
+    width: 100px;
+    padding: 10px 10px;
+}
+}
+
 .product-image {
-    width: 250px;
+    width: 200px;
     height: auto;
+}
+
+@media (max-width: 450px) {
+    .product-image {
+    width: 100px;
+    height: auto;
+    }
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: 400;
+    word-break: break-word;
+}
+@media (max-width: 450px) {
+    .product-title {
+    font-size: 12px;
+    font-weight: 400;
+    word-break: break-word;
+}
+}
+
+.button {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-image: linear-gradient(to bottom, rgb(73, 73, 73), rgb(17, 17, 17));
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: border-color 0.4s;
+}
+
+@media (max-width: 450px) {
+    .button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 2px 5px;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: inherit;
+  background-image: linear-gradient(to bottom, rgb(73, 73, 73), rgb(17, 17, 17));
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: border-color 0.4s;
+}
+}
+
+
+button:hover {
+  border-color: #009c34;
+}
+button:focus,
+button:focus-visible {
+  outline: 10px auto -webkit-focus-ring-color;
 }

@@ -1,0 +1,30 @@
+.cart {
+    padding-left: 30px;
+
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.cart-image{
+    width: auto;
+    height: auto;
+    max-width: 200px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 40px;
+    padding: 20px;
+    padding-left: 10px;
+}

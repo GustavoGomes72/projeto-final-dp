@@ -11,7 +11,7 @@ export default function Home({onAddToCart}) {
 
     return (
         <div className="home">
-            <h1>Produtos</h1>
+            <h1 className="h1">Products</h1>
 
                 <div className="grid">
                     {products.map((p) => (

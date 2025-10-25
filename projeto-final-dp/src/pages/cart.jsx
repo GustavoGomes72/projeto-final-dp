@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getProduct } from "../services/api";
+import '../styles/cart.css'
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -23,9 +24,10 @@ export default function Cart() {
 
   return (
     <div className="cart">
-      <h1>Cart</h1>
+      <h1>Your Cart</h1>
       {cartItems.map((item) => (
         <div key={item.id}>
+          <img className="cart-image" src={item.image}/>
           <p>{item.title}</p>
           <p>${item.price}</p>
           <button onClick={() => removeItem(item.id)}>Remove</button>

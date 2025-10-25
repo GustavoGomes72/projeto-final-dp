@@ -7,14 +7,14 @@ export default function ProductCard({product, onAdd}) {
       <div>
         <img className='product-image' src= {product.image} alt={product.title}/>
       </div>
-      <div className='product-title'>
-        <h3>{product.title}</h3>
+      <div>
+        <h3 className='product-title'>{product.title}</h3>
       </div>
-      <div className='product-price'>
-        <p>{product.price}</p>
+      <div>
+        <p className='product-price'>{product.price}</p>
       </div>
         
-        <button onClick={() => onAdd(product.id)}>Adicionar</button>
+        <button className='button' onClick={() => onAdd(product.id)}>Add to cart</button>
     
     </div>
   )

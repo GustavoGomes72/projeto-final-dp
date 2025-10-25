@@ -1,4 +1,32 @@
 .home {
     width: 100%;
-    padding: 20px;
 }
+
+
+.h1 {
+    font-weight: 400;
+    font-size: 40px;
+    padding: 20px;
+    padding-left: 30px;
+
+}
+
+@media(max-width: 450px) {
+    .h1 {
+    font-weight: 500;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 30px;
+
+}
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+

@@ -1,27 +1,36 @@
 .header {
   width: 100%;
-  background-image: linear-gradient(to bottom, rgb(85, 85, 85), rgb(43, 43, 43));
-  padding: 10px 20px;
+  height: 80px;
+  background-image: linear-gradient(to bottom, rgb(22, 22, 22), rgb(17, 17, 17));
+  padding: 0px 10px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky; 
   top: 0;          
-  z-index: 1000;
+  box-sizing: border-box;
 }
 
-.carticon {
+.icon {
   width: auto;
-  height: 32px;
+  height: 20px;
 }
 
 .nav {
+  flex: 1;
   display: flex;
   flex: 1;
   justify-content: flex-end;
-  align-items: center;
+}
 
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
 .nav a {
@@ -30,4 +39,14 @@
 
 .navbutton {
   color: whitesmoke;
+  font-size: 20px;
+}
+
+@media (max-width: 450px) {
+  .navbutton {
+  font-size: 15px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  }
 }
